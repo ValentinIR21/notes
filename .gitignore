@@ -1,0 +1,11 @@
+bin/
+notes
+notes.exe
+
+.env
+*.local
+
+.idea/
+.vscode/
+
+.log
