@@ -29,7 +29,7 @@ func (h *Handler) Router() http.Handler {
 	mux := http.NewServeMux()
 	mux.HandleFunc("POST /notes", h.create)
 
-	return recover(Logging(mux))
+	return Recover(Logging(mux))
 }
 
 type CreateRequest struct {
