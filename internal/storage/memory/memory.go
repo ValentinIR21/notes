@@ -23,7 +23,7 @@ func (s *Storage) Save(n domain.Note) error {
 	return nil
 }
 
-func (s *Storage) Get(id string) (domain.Note, error) {
+func (s *Storage) Get(id string) ([]domain.Note, error) {
 	s.mu.RLock()
 
 	out := make([]domain.Note, 0, len(s.notes))
